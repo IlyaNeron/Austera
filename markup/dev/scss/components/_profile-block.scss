@@ -1,0 +1,96 @@
+.profile-block {
+  padding: 0 15px 30px;
+  text-align: center;
+  width: (100%/4);
+
+  .image-block {
+    margin: 0 0 30px;
+
+    img {
+      border-radius: 50%;
+    }
+
+  }
+
+  .description-block {
+    margin: 0 0 25px;
+
+    h3 {
+      font-size: 36px;
+
+      &:not(:last-child) {
+        margin: 0 0 15px;
+      }
+
+    }
+
+  }
+
+}
+
+@include media('<widescreen') {
+
+  .profile-block {
+
+    .description-block {
+
+      h3 {
+        font-size: 32px;
+      }
+
+    }
+
+  }
+
+}
+
+@include media('<desktop') {
+
+  .profile-block {
+
+    .description-block {
+
+      h3 {
+        font-size: 28px;
+      }
+
+    }
+
+  }
+
+}
+
+@include media('<tablet') {
+
+  .profile-block {
+    width: (100%/2);
+
+    .image-block {
+      margin: 0 0 20px;
+    }
+
+    .description-block {
+      margin: 0 0 20px;
+    }
+
+  }
+
+}
+
+@include media('<phone') {
+
+  .profile-block {
+    width: 100%;
+    padding: 0 0 30px;
+
+    .description-block {
+
+      h3 {
+        font-size: 24px;
+      }
+
+    }
+
+  }
+
+}

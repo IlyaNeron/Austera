@@ -2,5 +2,11 @@
   max-width: $base-max-width;
   margin: 0 auto;
   padding: $base-padding;
-  @extend %clearfix;
+
+  &-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
 }

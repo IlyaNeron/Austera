@@ -1,0 +1,35 @@
+.decorative-container {
+  background: linear-gradient(-33deg, $skyblue 0, $skyblue 48%, transparent 48%, transparent 100%);
+}
+
+@include media('<widescreen') {
+
+  .decorative-container {
+    background: linear-gradient(-33deg, $skyblue 0, $skyblue 40%, transparent 40%, transparent 100%);
+  }
+
+}
+
+@include media('<desktop') {
+
+  .decorative-container {
+    background: linear-gradient(-33deg, $skyblue 0, $skyblue 35%, transparent 35%, transparent 100%);
+  }
+
+}
+
+@include media('<tablet') {
+
+  .decorative-container {
+    background: linear-gradient(-30deg, $skyblue 0, $skyblue 30%, transparent 30%, transparent 100%);
+  }
+
+}
+
+@include media('<phone') {
+
+  .decorative-container {
+    background: linear-gradient(-30deg, $skyblue 0, $skyblue 25%, transparent 25%, transparent 100%);
+  }
+
+}

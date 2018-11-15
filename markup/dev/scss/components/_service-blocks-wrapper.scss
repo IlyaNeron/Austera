@@ -1,0 +1,13 @@
+.service-blocks-wrapper {
+  display: flex;
+  margin: 0 -15px 35px;
+  flex-wrap: wrap;
+}
+
+@include media('<tablet') {
+
+  .service-blocks-wrapper {
+    margin: 0 0 25px;
+  }
+
+}

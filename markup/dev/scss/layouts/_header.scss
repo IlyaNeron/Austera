@@ -1,0 +1,30 @@
+.header {
+  background: $black;
+  padding: 45px 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+
+  .container {
+    max-width: 1830px;
+  }
+
+}
+
+@include media('<tablet') {
+
+  .header {
+    padding: 30px 0;
+  }
+
+}
+
+@include media('<phone') {
+
+  .header {
+    padding: 20px 0;
+  }
+
+}

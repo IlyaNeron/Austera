@@ -1,0 +1,19 @@
+.logo {
+
+  a {
+    display: block;
+  }
+
+}
+
+@include media('<phone') {
+
+  .logo {
+
+    img {
+      max-width: 85%;
+    }
+
+  }
+
+}

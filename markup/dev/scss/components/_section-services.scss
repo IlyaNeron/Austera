@@ -1,0 +1,27 @@
+.section-services {
+  padding: 80px 0 75px;
+}
+
+@include media('<widescreen') {
+
+  .section-services {
+    padding: 60px 0 55px;
+  }
+
+}
+
+@include media('<tablet') {
+
+  .section-services {
+    padding: 40px 0 25px;
+  }
+
+}
+
+@include media('<phone') {
+
+  .section-services {
+    padding: 20px 0 15px;
+  }
+
+}

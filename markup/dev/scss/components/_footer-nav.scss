@@ -1,0 +1,41 @@
+.footer-nav-menu {
+  @extend %listreset;
+  display: flex;
+
+  li {
+
+    &:not(:last-child) {
+      margin-right: 15px;
+    }
+
+  }
+
+  a {
+    font-weight: 700;
+    color: $light-gray;
+
+    &:hover,
+    &:focus {
+      color: $skyblue;
+    }
+
+  }
+
+}
+
+@include media('<xs-phone') {
+
+  .footer-nav-menu {
+
+    li {
+      font-size: 12px;
+
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+
+    }
+
+  }
+
+}

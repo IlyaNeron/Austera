@@ -1,0 +1,37 @@
+.team-caption {
+  font-size: 72px;
+  font-weight: 700;
+  margin: 0 0 110px;
+
+  mark {
+    display: block;
+  }
+
+}
+
+@include media('<desktop') {
+
+  .team-caption {
+    font-size: 58px;
+    margin: 0 0 90px;
+  }
+
+}
+
+@include media('<tablet') {
+
+  .team-caption {
+    font-size: 44px;
+    margin: 0 0 50px;
+  }
+
+}
+
+@include media('<phone') {
+
+  .team-caption {
+    font-size: 32px;
+    margin: 0 0 30px;
+  }
+
+}

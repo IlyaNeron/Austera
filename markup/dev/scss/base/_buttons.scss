@@ -4,8 +4,6 @@
   font-size: $btn-font-size;
   font-weight: $btn-font-weight;
   line-height: $btn-line-height;
-  font-family: $second-font-family;
-  text-transform: uppercase;
   border: $btn-border;
   outline: none;
   @include animate(color background border);
@@ -19,20 +17,14 @@
     background-color: $btn-background-color;
 
     &:hover {
-      background: $red;
+      background: $medium-gray;
       color: $white;
     }
 
-  }
-
-  &-secondary {
-    background: $red;
-    color: $white;
-    border: $btn-secondary-border;
-
-    &:hover {
-      background: $dark-gray;
-      color: $white;
+    &-lg {
+      padding: $btn-primary-lg-padding;
+      min-width: $btn-primary-lg-min-width;
+      font-size: $btn-primary-lg-font-size;
     }
 
   }
@@ -43,22 +35,16 @@
 @include media('<tablet') {
 
   .btn {
-
-    &-primary,
-    &-secondary {
-      padding: 15px;
-    }
-
+    font-size: 16px;
   }
 
 }
 
-@include media('<phone') {
+@include media('<xs-phone') {
 
   .btn {
 
-    &-primary,
-    &-secondary {
+    &-primary {
       min-width: 100%;
     }
 

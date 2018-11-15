@@ -1,0 +1,27 @@
+.copyright {
+  color: $light-gray;
+
+  .by {
+    color: inherit;
+
+    &:hover,
+    &:focus {
+      color: $skyblue;
+    }
+
+  }
+
+}
+
+@include media('<xs-phone') {
+
+  .copyright {
+    text-align: center;
+
+    .by {
+      display: block;
+    }
+
+  }
+
+}

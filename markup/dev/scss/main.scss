@@ -10,15 +10,50 @@
 @import 'base/buttons';
 @import 'base/helpers';
 @import 'base/forms';
+@import 'base/typography';
 
 // layouts
 @import 'layouts/wrapper';
 @import 'layouts/header';
 @import 'layouts/main';
 @import 'layouts/footer';
+@import 'layouts/container';
 
 // components
-
+@import 'components/logo';
+@import 'components/nav';
+@import 'components/section-main';
+@import 'components/components';
+@import 'components/info-block';
+@import 'components/section-services';
+@import 'components/head-block';
+@import 'components/service-blocks-wrapper';
+@import 'components/section-bottom';
+@import 'components/team-content';
+@import 'components/profile-block';
+@import 'components/section-team';
+@import 'components/product-blocks-wrapper';
+@import 'components/section-product';
+@import 'components/product-block';
+@import 'components/section-project';
+@import 'components/service-block';
+@import 'components/content-block';
+@import 'components/section-content';
+@import 'components/content-block-white';
+@import 'components/decorative-container';
+@import 'components/section-contact';
+@import 'components/social-links';
+@import 'components/contact-list';
+@import 'components/contact-block';
+@import 'components/search-block';
+@import 'components/copyright';
+@import 'components/footer-nav';
+@import 'components/contact-form';
+@import 'components/project-block';
+@import 'components/block-icon';
+@import 'components/team-caption';
+@import 'components/form-search';
+@import 'components/address';
 
 
 

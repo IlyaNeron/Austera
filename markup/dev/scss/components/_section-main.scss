@@ -1,0 +1,44 @@
+.section-main {
+  height: 100vh;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 123px 0;
+  z-index: 1;
+
+  &:after {
+    content: '';
+    background: $dark-black;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: 0.8;
+  }
+
+  .container {
+    display: flex;
+  }
+
+}
+
+@include media('<tablet') {
+
+  .section-main {
+    padding: 93px 0;
+  }
+
+}
+
+@include media('<phone') {
+
+  .section-main {
+    padding: 68px 0;
+  }
+
+}

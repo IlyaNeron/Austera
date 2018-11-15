@@ -1,0 +1,48 @@
+.head-block {
+  text-align: center;
+  padding: 0 0 80px;
+  margin: 0 0 80px;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+@include media('<widescreen') {
+
+  .head-block {
+    padding: 0 0 60px;
+    margin: 0 0 60px;
+
+    h2 {
+      font-size: 42px;
+    }
+
+  }
+
+}
+
+@include media('<tablet') {
+
+  .head-block {
+    padding: 0 0 40px;
+    margin: 0 0 40px;
+
+    h2 {
+      font-size: 32px;
+    }
+
+  }
+
+}
+
+@include media('<phone') {
+
+  .head-block {
+    padding: 0 0 20px;
+    margin: 0 0 20px;
+
+    h2 {
+      font-size: 26px;
+    }
+
+  }
+
+}

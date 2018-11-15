@@ -1,0 +1,141 @@
+.search-block {
+  position: relative;
+  @include animate(opacity visibility);
+
+  .form-opener {
+    font-size: 18px;
+    color: $white;
+    display: block;
+    width: 30px;
+    height: 25px;
+    position: relative;
+
+    &:hover,
+    &:focus {
+      color: $skyblue;
+    }
+
+    i {
+      @include vertical-align-el;
+    }
+
+  }
+
+  .form-close {
+    opacity: 0;
+    visibility: hidden;
+    width: 30px;
+    height: 25px;
+    position: relative;
+    z-index: 4;
+
+    &:after, &:before {
+      content: '';
+      position: absolute;
+      height: 2px;
+      width: 100%;
+      background: $white;
+      @include animate(transform opacity visibility);
+      transform: rotate(-45deg);
+      top: 50%;
+    }
+
+    &:before {
+      transform: rotate(45deg);
+    }
+
+    .search-active & {
+      opacity: 1;
+      visibility: visible;
+      position: absolute;
+      top: 50px;
+      right: 50px;
+    }
+
+  }
+
+  .form-drop {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateX(100%);
+    @include animate(visibility opacity transform);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 4;
+    padding: 120px 0;
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: $black;
+      opacity: 0;
+      z-index: -1;
+      visibility: hidden;
+      @include animate(opacity visibility background);
+    }
+
+    .search-active & {
+      visibility: visible;
+      opacity: 1;
+      transform: translateX(0);
+
+      &:after {
+        opacity: 1;
+        visibility: visible;
+      }
+
+    }
+
+  }
+
+}
+
+@include media('<tablet') {
+
+  .search-block {
+    margin-right: 15px;
+
+    .form-close {
+      width: 25px;
+      height: 20px;
+
+      .search-active & {
+        top: 35px;
+        right: 15px;
+      }
+
+    }
+
+  }
+
+}
+
+@include media('<phone') {
+
+  .search-block {
+
+    .form-close {
+
+      .search-active & {
+        top: 25px;
+      }
+
+    }
+
+  }
+
+}
+
+.search-active {
+  overflow: hidden;
+}

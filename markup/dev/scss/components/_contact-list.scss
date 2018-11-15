@@ -1,0 +1,60 @@
+.contact-list {
+  @extend %listreset;
+  margin: 0 0 75px;
+
+  li {
+    font-size: 30px;
+    line-height: 1;
+
+    &:not(:last-child) {
+      margin: 0 0 20px;
+    }
+
+  }
+
+  a {
+    color: $skyblue;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+}
+
+@include media('<desktop') {
+
+  .contact-list {
+    margin: 0 0 60px;
+
+    li {
+      font-size: 26px;
+    }
+
+  }
+
+}
+
+@include media('<tablet') {
+
+  .contact-list {
+    margin: 0 0 50px;
+
+    li {
+      font-size: 22px;
+    }
+
+  }
+
+}
+
+@include media('<phone') {
+
+  .contact-list {
+    margin: 0 0 30px;
+
+    li {
+      font-size: 20px;
+    }
+
+  }
+
+}

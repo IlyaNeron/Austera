@@ -1,0 +1,215 @@
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-menu {
+  @extend %listreset;
+  display: flex;
+  margin-right: 80px;
+
+  li {
+    font-size: 18px;
+    line-height: 1;
+
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+
+    &.active {
+
+      a {
+        color: $skyblue;
+        border-color: $skyblue;
+      }
+
+    }
+
+  }
+
+  a {
+    display: block;
+    border-bottom: 1px solid transparent;
+    @include animate(border color);
+
+    &:hover,
+    &:focus {
+      border-bottom: 1px solid $skyblue;
+    }
+
+  }
+
+}
+
+.nav-opener {
+  display: none;
+}
+
+.nav-drop {
+  display: flex;
+  align-items: center;
+}
+
+@include media('<desktop') {
+
+  .nav-menu {
+    margin-right: 70px;
+
+    li {
+      font-size: 16px;
+    }
+
+  }
+
+}
+
+@include media('<tablet') {
+
+  .nav {
+    flex-flow: row-reverse;
+
+    &-opener {
+      width: 30px;
+      height: 25px;
+      position: relative;
+      display: block;
+      z-index: 4;
+
+      &:after, &:before, span {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background: $white;
+        @include animate(transform opacity visibility);
+      }
+
+      &:after {
+        top: 0;
+      }
+
+      &:before {
+        bottom: 0;
+      }
+
+      span {
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      .nav-active & {
+
+        &:after,
+        &:before {
+          content: '';
+          transform: rotate(-45deg);
+          top: 50%;
+        }
+
+        &:before {
+          transform: rotate(45deg);
+        }
+
+        span {
+          opacity: 0;
+          visibility: hidden;
+
+          &:after {
+            opacity: 0;
+            visibility: hidden;
+          }
+
+        }
+
+      }
+
+    }
+
+    &-drop {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: $skyblue;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateX(100%);
+      @include animate(transform opacity visibility);
+      padding: 130px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: auto;
+      flex-direction: column;
+      z-index: 3;
+
+      .nav-active & {
+        opacity: 1;
+        transform: translateX(0);
+        visibility: visible;
+      }
+
+      .resize-active & {
+        transition: none;
+      }
+
+    }
+
+    .nav-menu {
+      flex-direction: column;
+      margin: 0;
+      text-align: center;
+
+      li {
+        font-size: 24px;
+
+        &:not(:last-child) {
+          margin: 0 0 30px;
+        }
+
+        &.active {
+
+          a {
+            color: $white;
+            border-color: $white;
+          }
+
+        }
+
+      }
+
+      a {
+        padding: 0 0 10px;
+
+        &:hover,
+        &:focus {
+          color: $white;
+          border-color: $white;
+        }
+
+      }
+
+    }
+
+  }
+
+}
+
+@include media('<phone') {
+
+  .nav {
+
+    &-opener {
+      width: 25px;
+      height: 20px;
+    }
+
+  }
+
+}
+
+.nav-active {
+  overflow: hidden;
+}
+

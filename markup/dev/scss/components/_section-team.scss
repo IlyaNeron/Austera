@@ -1,0 +1,27 @@
+.section-team {
+  padding: 95px 0 65px;
+}
+
+@include media('<widescreen') {
+
+  .section-team {
+    padding: 60px 0 55px;
+  }
+
+}
+
+@include media('<tablet') {
+
+  .section-team {
+    padding: 40px 0 25px;
+  }
+
+}
+
+@include media('<phone') {
+
+  .section-team {
+    padding: 20px 0 15px;
+  }
+
+}

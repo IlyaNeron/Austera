@@ -1,0 +1,58 @@
+.content-block-white {
+
+  .image-block {
+    width: 50%;
+  }
+
+  .description-block {
+    color: $white;
+    padding: 0 0 0 15px;
+
+    h2 {
+      color: $white;
+    }
+
+  }
+
+  .btn-primary {
+    background: $white;
+    color: $skyblue;
+
+    &:hover,
+    &:focus {
+      background: $medium-gray;
+      color: $white;
+    }
+
+  }
+
+}
+
+@include media('<tablet') {
+
+  .content-block-white {
+    flex-direction: column;
+
+    .image-block {
+      width: 80%;
+    }
+
+    .description-block {
+      padding: 0;
+    }
+
+  }
+
+}
+
+@include media('<phone') {
+
+  .content-block-white {
+
+    .image-block {
+      width: 100%;
+    }
+
+  }
+
+}

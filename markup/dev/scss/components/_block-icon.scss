@@ -1,0 +1,46 @@
+.block-icon {
+  font-size: 48px;
+  color: $skyblue;
+
+  &:not(:last-child) {
+    margin: 0 0 50px;
+  }
+
+}
+
+@include media('<desktop') {
+
+  .block-icon {
+    font-size: 42px;
+  
+    &:not(:last-child) {
+      margin: 0 0 40px;
+    }
+  
+  }
+
+}
+
+@include media('<tablet') {
+
+  .block-icon {
+  
+    &:not(:last-child) {
+      margin: 0 0 30px;
+    }
+  
+  }
+
+}
+
+@include media('<phone') {
+
+  .block-icon {
+  
+    &:not(:last-child) {
+      margin: 0 0 20px;
+    }
+  
+  }
+
+}

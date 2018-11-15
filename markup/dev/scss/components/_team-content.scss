@@ -1,0 +1,14 @@
+.team-content {
+  display: flex;
+  margin: 0 -15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@include media('<phone') {
+
+  .team-content {
+    margin: 0;
+  }
+
+}
