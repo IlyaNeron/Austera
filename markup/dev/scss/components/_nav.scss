@@ -6,11 +6,11 @@
 .nav-menu {
   @extend %listreset;
   display: flex;
-  margin-right: 80px;
+  margin-right: 88px;
 
   li {
     font-size: 18px;
-    line-height: 1;
+    line-height: 1.1;
 
     &:not(:last-child) {
       margin-right: 50px;

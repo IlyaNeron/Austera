@@ -13,7 +13,7 @@ input[type="password"],
 //input[type='url'],
 // input[type='date'],
 textarea {
-  @include size(100%, 70px);
+  @include size(100%, 63px);
   box-sizing: border-box;
   font-size: $form-element-font-size;
   font-weight: $form-element-font-weight;
@@ -49,9 +49,10 @@ select {
 }
 
 textarea {
-  @include size(100%, 204px !important);
+  @include size(100%, 206px !important);
   resize: none;
   vertical-align: top;
+  padding: 20px 15px;
 }
 
 button,

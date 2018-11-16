@@ -1,13 +1,15 @@
 .block-icon {
   width: 80px;
   height: 80px;
+  display: flex;
+  align-items: center;
 
   img {
     max-width: 80px;
   }
 
   &:not(:last-child) {
-    margin: 0 0 45px;
+    margin: 0 0 47px;
   }
 
 }
