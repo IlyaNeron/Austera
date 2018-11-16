@@ -1,10 +1,13 @@
 .block-icon {
-  font-size: 64px;
-  color: $skyblue;
-  line-height: 1;
+  width: 80px;
+  height: 80px;
+
+  img {
+    max-width: 80px;
+  }
 
   &:not(:last-child) {
-    margin: 0 0 50px;
+    margin: 0 0 45px;
   }
 
 }
@@ -12,7 +15,6 @@
 @include media('<desktop') {
 
   .block-icon {
-    font-size: 42px;
   
     &:not(:last-child) {
       margin: 0 0 40px;

@@ -8,6 +8,14 @@
       margin-right: 15px;
     }
 
+    &.active-link {
+
+      a {
+        color: $skyblue;
+      }
+
+    }
+
   }
 
   a {

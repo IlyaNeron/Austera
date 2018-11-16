@@ -1,7 +1,8 @@
 .product-block {
   position: relative;
   width: (100%/4);
-  padding-bottom: 22%;
+  padding-bottom: 21.5%;
+  overflow: hidden;
 
   h3 {
     font-size: 48px;
@@ -29,9 +30,8 @@
 
   &:after {
     content: '';
-    background: $dark-black;
+    background: rgba($dark-black, 0.8);
     position: absolute;
-    opacity: 0.8;
     top: 0;
     left: 0;
     right: 0;
@@ -40,7 +40,7 @@
   }
 
   &:hover:after {
-    background: $skyblue;
+    background: rgba($skyblue, 0.8);
   }
 
 }

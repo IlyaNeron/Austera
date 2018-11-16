@@ -4,9 +4,19 @@
   .description-block {
     max-width: 630px;
     padding: 30px 15px 30px 75px;
+    line-height: 2.2;
 
     h2 {
       font-size: 72px;
+      margin: 0 0 65px;
+    }
+
+    p {
+
+      &:not(:last-child) {
+        margin: 0 0 60px;
+      }
+
     }
 
   }

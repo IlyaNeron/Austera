@@ -17,8 +17,9 @@
     background-color: $btn-background-color;
 
     &:hover {
-      background: $medium-gray;
-      color: $white;
+      background: transparent;
+      color: $skyblue;
+      border-color: $skyblue;
     }
 
     &-lg {

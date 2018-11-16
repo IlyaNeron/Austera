@@ -1,6 +1,11 @@
 .service-block {
   padding: 0 15px 30px;
   width: (100%/4);
+
+  h3 {
+    margin: 0 0 22px;
+  }
+
 }
 
 @include media('<desktop') {
