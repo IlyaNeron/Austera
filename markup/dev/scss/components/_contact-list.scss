@@ -5,6 +5,7 @@
   li {
     font-size: 30px;
     line-height: 1;
+    font-weight: 600;
 
     &:not(:last-child) {
       margin: 0 0 20px;
@@ -16,6 +17,12 @@
     color: $skyblue;
     display: inline-block;
     vertical-align: top;
+    font-weight: 600;
+
+    &:hover {
+      color: $white;
+    }
+
   }
 
 }

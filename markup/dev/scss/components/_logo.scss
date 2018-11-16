@@ -4,6 +4,10 @@
     display: block;
   }
 
+  img {
+    vertical-align: top;
+  }
+
 }
 
 @include media('<phone') {

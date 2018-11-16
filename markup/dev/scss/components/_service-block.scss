@@ -6,6 +6,10 @@
     margin: 0 0 22px;
   }
 
+  img {
+    vertical-align: top;
+  }
+
 }
 
 @include media('<desktop') {

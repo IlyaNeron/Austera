@@ -1,4 +1,4 @@
-.content-block-white {
+.content-block-secondary {
 
   .image-block {
     width: 51%;
@@ -31,7 +31,7 @@
 
 @include media('<tablet') {
 
-  .content-block-white {
+  .content-block-secondary {
     flex-direction: column;
 
     .image-block {
@@ -48,7 +48,7 @@
 
 @include media('<phone') {
 
-  .content-block-white {
+  .content-block-secondary {
 
     .image-block {
       width: 100%;

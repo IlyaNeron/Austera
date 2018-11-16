@@ -15,6 +15,12 @@
     font-size: 18px;
     outline: none;
     padding: 0;
+    @include animate(color);
+
+    &:hover {
+      color: $skyblue;
+    }
+
   }
 
   input {
