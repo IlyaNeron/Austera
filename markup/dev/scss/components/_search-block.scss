@@ -106,8 +106,6 @@
     margin-right: 15px;
 
     .form-close {
-      width: 25px;
-      height: 20px;
 
       .search-active & {
         top: 35px;
@@ -125,6 +123,8 @@
   .search-block {
 
     .form-close {
+      width: 25px;
+      height: 20px;
 
       .search-active & {
         top: 25px;

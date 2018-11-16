@@ -4,7 +4,7 @@
   width: (100%/4);
 
   .image-block {
-    margin: 0 0 30px;
+    margin: 0 0 18px;
 
     img {
       border-radius: 50%;
@@ -13,13 +13,14 @@
   }
 
   .description-block {
-    margin: 0 0 25px;
+    margin: 0 0 20px;
 
     h3 {
       font-size: 36px;
+      line-height: 1;
 
       &:not(:last-child) {
-        margin: 0 0 15px;
+        margin: 0 0 10px;
       }
 
     }

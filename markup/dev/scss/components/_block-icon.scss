@@ -1,6 +1,7 @@
 .block-icon {
-  font-size: 48px;
+  font-size: 64px;
   color: $skyblue;
+  line-height: 1;
 
   &:not(:last-child) {
     margin: 0 0 50px;
